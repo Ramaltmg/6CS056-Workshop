@@ -1,17 +1,17 @@
-```blade
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Students</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title', 'Students')
+
+@section('content')
 
 <h1>Students</h1>
 
 <a href="/students/create">Add Student</a>
 
 @if(session('success'))
-    <p>{{ session('success') }}</p>
+    <x-alert type="success">
+        {{ session('success') }}
+    </x-alert>
 @endif
 
 <table border="1">
@@ -60,6 +60,4 @@
     </tbody>
 </table>
 
-</body>
-</html>
-```
+@endsection

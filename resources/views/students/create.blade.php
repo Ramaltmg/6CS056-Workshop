@@ -1,10 +1,8 @@
-```blade
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Add Student</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title', 'Add Student')
+
+@section('content')
 
 <h1>Add Student</h1>
 
@@ -48,6 +46,4 @@
 
 <a href="/students">Back to Students</a>
 
-</body>
-</html>
-```
+@endsection
